@@ -1,0 +1,8 @@
+- name: copy
+  hosts: all
+
+  tasks:
+    name: copy /etc/resolv.conf
+    copy:
+      src: /etc/resolv.conf
+      dest: /tmp/tower.conf
