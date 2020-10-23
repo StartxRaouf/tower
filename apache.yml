@@ -5,4 +5,4 @@
     - name: Install package
       yum:
         name: httpd
-        state: latest
+        state: absent
