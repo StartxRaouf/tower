@@ -1,0 +1,8 @@
+- name: install apache
+  hosts: all
+
+  tasks:
+    - name: Install package
+      yum:
+        name: httpd
+        state: latest
