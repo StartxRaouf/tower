@@ -2,7 +2,7 @@
   hosts: all
 
   tasks:
-    - name: copy /etc/resolv.conf
+    - name: copy nsswitch.conf
       copy:
-        src: /etc/resolv.conf
+        src: /etc/nsswitch.conf
         dest: /tmp/tower.conf
